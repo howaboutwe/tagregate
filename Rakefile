@@ -13,15 +13,13 @@ require 'rake'
 
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
-  # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "tagregate"
   gem.homepage = "http://github.com/howaboutwe/tagregate"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
-  gem.email = "pair+bryan+kenneth@howaboutwe.com"
-  gem.authors = ["Bryan Woods & Kenneth Lay"]
-  # dependencies defined in Gemfile
+  gem.summary = %Q{Tagregate your app's cucumber tags}
+  gem.description = %Q{Tagregate your Rails app's cucumber tags}
+  gem.email = "pair+bryan+matt@howaboutwe.com"
+  gem.authors = ["Bryan Woods & Matt Vermaak"]
 end
 Jeweler::RubygemsDotOrgTasks.new
 
@@ -37,13 +35,3 @@ RSpec::Core::RakeTask.new(:rcov) do |spec|
 end
 
 task :default => :spec
-
-require 'rdoc/task'
-Rake::RDocTask.new do |rdoc|
-  version = File.exist?('VERSION') ? File.read('VERSION') : ""
-
-  rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "tagregate #{version}"
-  rdoc.rdoc_files.include('README*')
-  rdoc.rdoc_files.include('lib/**/*.rb')
-end
