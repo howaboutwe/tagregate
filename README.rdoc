@@ -14,6 +14,6 @@ Description goes here.
 
 == Copyright
 
-Copyright (c) 2012 Bryan Woods & Kenneth Lay. See LICENSE.txt for
+Copyright (c) 2012 HowAboutWe. See LICENSE.txt for
 further details.
 
