@@ -18,8 +18,8 @@ Jeweler::Tasks.new do |gem|
   gem.license = "MIT"
   gem.summary = %Q{Tagregate your app's cucumber tags}
   gem.description = %Q{Tagregate your Rails app's cucumber tags}
-  gem.email = "pair+bryan+matt@howaboutwe.com"
-  gem.authors = ["Bryan Woods & Matt Vermaak"]
+  gem.email = "dev@howaboutwe.com"
+  gem.authors = ["Bryan Woods", "Matt Vermaak"]
 end
 Jeweler::RubygemsDotOrgTasks.new
 
