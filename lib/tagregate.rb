@@ -3,7 +3,6 @@ Dir["/tagregate/*.rb"].each { |file| require file }
 
 def load_rake_tasks
   Dir[File.join(File.dirname(__FILE__),'tasks/*.rake')].each do |f|
-    puts "Loading #{f}"
     load f
   end
 end
