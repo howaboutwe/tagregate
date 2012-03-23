@@ -2,6 +2,23 @@
 
 Tagregate adds helpful Rake tasks to Ruby on Rails applications that use Cucumber tags.
 
+== Why?
+
+We now have a rather extensive Cucumber test suite at HowAboutWe, but even when
+it was smaller, it quickly became apparent that the long time it took to run the
+entire suite was negatively impacting our development process.
+
+While any sufficiently large Cucumber suite will eventually need more
+substantial optimizations like parallel execution and fast hardware, a
+reasonable first step for us was to begin tagging each new feature with the
+areas of the codebase most related to our test. Then for example if we were
+reworking the signup page, we could run the @signup tag, get a decent level
+of confidence in the regression risk of our change, and only have to wait for a
+subset of our entire Cucumber test suite to finish running.
+
+Eventually we had a considerable number of tags in our suite, so we wrote
+Tagregate to help us keep them organized and valuable.
+
 == Included Rake Tasks
   rake cucumber:tagregate:count
 Prints the name and number of occurrences of all Cucumber tags found in your
