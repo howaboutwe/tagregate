@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Bryan Woods", "Matt Vermaak"]
   s.date = "2012-03-23"
-  s.description = "Tagregate your Rails app's cucumber tags"
+  s.description = "Tagregate adds helpful Rake tasks to Ruby on Rails applications that use Cucumber tags."
   s.email = "dev@howaboutwe.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",

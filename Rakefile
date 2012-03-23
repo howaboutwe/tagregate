@@ -17,7 +17,7 @@ Jeweler::Tasks.new do |gem|
   gem.homepage = "http://github.com/howaboutwe/tagregate"
   gem.license = "MIT"
   gem.summary = %Q{Tagregate your app's cucumber tags}
-  gem.description = %Q{Tagregate your Rails app's cucumber tags}
+  gem.description = %Q{Tagregate adds helpful Rake tasks to Ruby on Rails applications that use Cucumber tags.}
   gem.email = "dev@howaboutwe.com"
   gem.authors = ["Bryan Woods", "Matt Vermaak"]
 end
