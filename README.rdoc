@@ -24,6 +24,9 @@ Tagregate to help us keep them organized and valuable.
 Prints the name and number of occurrences of all Cucumber tags found in your
 application's features/ directory
 
+  rake cucumber:tagregate:file
+Prints the name of each tag, along with each file in which the tag is being used.
+
 == Installation
   # In your Rails application's Gemfile...
   group :test, :development do

@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "tagregate"
-  s.version = "0.1.0"
+  s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Bryan Woods", "Matt Vermaak"]
-  s.date = "2012-03-23"
+  s.date = "2012-03-30"
   s.description = "Tagregate adds helpful Rake tasks to Ruby on Rails applications that use Cucumber tags."
   s.email = "dev@howaboutwe.com"
   s.extra_rdoc_files = [
@@ -27,6 +27,7 @@ Gem::Specification.new do |s|
     "VERSION",
     "lib/tagregate.rb",
     "lib/tagregate/count.rb",
+    "lib/tagregate/file.rb",
     "lib/tasks/tagregate.rake",
     "spec/spec_helper.rb",
     "spec/tagregate_spec.rb",
@@ -43,17 +44,20 @@ Gem::Specification.new do |s|
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_development_dependency(%q<rspec>, ["~> 2.8.0"])
-      s.add_development_dependency(%q<bundler>, ["~> 1.0.0"])
+      s.add_development_dependency(%q<bundler>, ["~> 1.1.1"])
       s.add_development_dependency(%q<jeweler>, ["~> 1.8.3"])
+      s.add_development_dependency(%q<cucumber>, [">= 0"])
     else
       s.add_dependency(%q<rspec>, ["~> 2.8.0"])
-      s.add_dependency(%q<bundler>, ["~> 1.0.0"])
+      s.add_dependency(%q<bundler>, ["~> 1.1.1"])
       s.add_dependency(%q<jeweler>, ["~> 1.8.3"])
+      s.add_dependency(%q<cucumber>, [">= 0"])
     end
   else
     s.add_dependency(%q<rspec>, ["~> 2.8.0"])
-    s.add_dependency(%q<bundler>, ["~> 1.0.0"])
+    s.add_dependency(%q<bundler>, ["~> 1.1.1"])
     s.add_dependency(%q<jeweler>, ["~> 1.8.3"])
+    s.add_dependency(%q<cucumber>, [">= 0"])
   end
 end
 

@@ -14,6 +14,7 @@ module Tagregate
 
     def after_features(whatever)
       keys = @aggregate.keys.sort
+
       keys.each do |k|
         @io.puts "#{k.ljust(50, " ")} #{@aggregate[k]}"
       end
