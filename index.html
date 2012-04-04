@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Tagregate by howaboutwe</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/howaboutwe/tagregate">Fork On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/howaboutwe/tagregate/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/howaboutwe/tagregate/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Tagregate</h1>
+          <p>Tagregate adds helpful Rake tasks to Ruby on Rails applications that use Cucumber tags.  </p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/howaboutwe">howaboutwe</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>Tagregate</h1>
+
+<p>Tagregate adds helpful Rake tasks to Ruby on Rails applications that use Cucumber tags.</p>
+
+<h2>Why?</h2>
+
+<p>We now have a rather extensive Cucumber test suite at HowAboutWe, but even when
+it was smaller, it quickly became apparent that the long time it took to run the
+entire suite was negatively impacting our development process.</p>
+
+<p>While any sufficiently large Cucumber suite will eventually need more
+substantial optimizations like parallel execution and fast hardware, a
+reasonable first step for us was to begin tagging each new feature with the
+areas of the codebase most related to our test. Then for example if we were
+reworking the signup page, we could run the @signup tag, get a decent level
+of confidence in the regression risk of our change, and only have to wait for a
+subset of our entire Cucumber test suite to finish running.</p>
+
+<p>Eventually we had a considerable number of tags in our suite, so we wrote
+Tagregate to help us keep them organized and valuable.</p>
+
+<h2>Included Rake Tasks</h2>
+
+<pre><code>  rake cucumber:tagregate:count
+</code></pre>
+
+<p>Prints the name and number of occurrences of all Cucumber tags found in your
+application's features/ directory</p>
+
+<pre><code>  rake cucumber:tagregate:file
+</code></pre>
+
+<p>Prints the name of each tag, along with each file in which the tag is being used.</p>
+
+<h2>Installation</h2>
+
+<div class="highlight">
+<pre>  <span class="c1"># In your Rails application's Gemfile...</span>
+  <span class="n">group</span> <span class="ss">:test</span><span class="p">,</span> <span class="ss">:development</span> <span class="k">do</span>
+    <span class="n">gem</span> <span class="s2">"tagregate"</span>
+  <span class="k">end</span>
+</pre>
+</div>
+
+
+<h2>Copyright</h2>
+
+<p>Copyright (c) 2012 HowAboutWe. See LICENSE.txt for further details.</p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+  </body>
+</html>
