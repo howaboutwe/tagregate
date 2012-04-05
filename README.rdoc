@@ -33,6 +33,17 @@ Prints the name of each tag, along with each file in which the tag is being used
     gem "tagregate"
   end
 
+== What is with the name?
+
+This is probably best explained with an ascii illustration:
+
+  tag <--- aggregate
+  tag <-- aggregate
+  tag <- aggregate
+  ta ** BOOM ** gregate
+
+As you can see, letters were lost in the making of this name.
+
 == Copyright
 
 Copyright (c) 2012 HowAboutWe. See LICENSE.txt for
