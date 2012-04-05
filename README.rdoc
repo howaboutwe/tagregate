@@ -37,10 +37,15 @@ Prints the name of each tag, along with each file in which the tag is being used
 
 This is probably best explained with an ascii illustration:
 
-  tag <--- aggregate
-  tag <-- aggregate
-  tag <- aggregate
+  tag <--- aggregate =-
+  tag <-- aggregate =-
+  tag <- aggregate =-
+
+    * g*   *
   ta ** BOOM ** gregate
+        *a *  *g *
+
+  tagregate
 
 As you can see, letters were lost in the making of this name.
 
