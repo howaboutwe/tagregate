@@ -1,4 +1,4 @@
-Copyright (c) 2012 Bryan Woods & Kenneth Lay
+Copyright (c) 2012 HowAboutWe
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
